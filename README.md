@@ -9,7 +9,7 @@ A custom [Dockerfile](Dockerfile) is used to build the function. The Java FDK Do
 
 ## Pre-requisites
 
-- Streaming Service: You need create a Stream - please refer to the [details in the documentation](https://docs.cloud.oracle.com/iaas/Content/Streaming/Tasks/managingstreams.htm). You also need to ensure that the user account which you configure in the application (details to follow) have the required privileges to execute stream list and publish operations. If not, you might see `404` (authorization related) errors while invoking the function. Please refer to the [IAM Policies section in the documentation](https://docs.cloud.oracle.com/iaas/Content/Identity/Reference/streamingpolicyreference.htm) for further details
+- Streaming Service: You need to 	create a Stream - please refer to the [details in the documentation](https://docs.cloud.oracle.com/iaas/Content/Streaming/Tasks/managingstreams.htm). You also need to ensure that the user account which you configure in the application (details to follow) have the required privileges to execute stream list and publish operations. If not, you might see `404` (authorization related) errors while invoking the function. Please refer to the [IAM Policies section in the documentation](https://docs.cloud.oracle.com/iaas/Content/Identity/Reference/streamingpolicyreference.htm) for further details
 - Ensure you are using the latest version of the Fn CLI. To update simply run the following command - `curl -LSs https://raw.githubusercontent.com/fnproject/cli/master/install | sh`
 - Oracle Functions: Configure the Oracle Functions service along with your development environment and switch to the correct Fn context using `fn use context <context-name>` 
 
